@@ -1,0 +1,178 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #dddddd;
+}
+/* global*/
+.container{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.dark{
+    padding: 15px;
+    background: #f84241;
+    color:aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*header*/
+header{
+    background:#f84241;
+    padding-top: 30px;
+    color: aliceblue;
+    border-bottom:#d13536 5px solid;
+    min-height:70px;
+}
+header a{
+    color:aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+}
+header li{
+    float:left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #brand{
+    float: left;
+}
+header #brand img{
+    margin: 0;
+    width: 120%
+}
+
+header nav{ 
+    float: right;
+    margin-top: 14px;
+}
+header .active a{
+    color:#353743;
+    font-weight:bold;
+}
+
+header a:hover{
+    color:#353743;
+    font-weight: bold;
+}
+
+/*myself*/
+
+#myself{
+    min-height: 400px;
+    background:url(../images/web-design-packages-background.jpg) no-repeat 0 -250px;
+    text-align: center;
+    color: aliceblue;
+}
+#myself h1{
+    margin-top:100px;
+    font-size: 60px;
+    margin-bottom: 10px
+}
+#myself p{
+    font-size: 25px;
+}
+
+
+
+/*my works*/
+
+.images{
+    width: 30%;
+    margin: 15px;
+}
+
+#works h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/*about*/
+
+
+.myapp,.location,.lang{
+    width: 27%;
+    float: left;
+    margin-left: 30px;
+    margin-top:20px;
+    }
+
+/*footer*/
+
+footer{
+    padding: 5px;
+    text-align: center;
+    background-color: #353743;
+    color:aliceblue;
+    margin-top: 20px;
+}
+#app{
+font-size: 18px;
+}
+
+/*icons*/
+
+.web h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color:#f84241;
+}
+.web{
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5px 2px;
+    background: #6b6b6c;
+    color: white;
+    vertical-align: middle;
+    
+    
+}
+.fa:hover {
+    opacity: 0.7;
+}
+/*media queries*/
+
+@media(max-width:768px){
+    header #brand,
+    header nav,
+    header li,
+    #works .images{
+        float:none;
+        text-align: center;
+        width: 100%;
+         }
+    header #brand img{
+        width: 100%
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #myself h1{
+        margin-top: 40px;
+    }
+    #folio .myapp,.location,.lang{
+        float: none;
+        width: 100%;
+        margin: 0; 
+        margin-bottom: 10px;
+    }
+}
